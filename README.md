@@ -14,6 +14,6 @@ Features;
 - Pixel perfect ui
 
 Why not SwiftUI
-- Can not be modified to be backwards compatible. SwiftUI is for toy projects until 2023.
+- SwiftUI projects can not be modified to be backwards compatible. SwiftUI is for toy projects until 2023.
 
 <img width="200" alt="portfolio_view" src="./screenshots/1.png"><img width="200" alt="portfolio_view" src="./screenshots/2.png"><img width="200" alt="portfolio_view" src="./screenshots/3.png"><img width="200" alt="portfolio_view" src="./screenshots/4.png"><img width="200" alt="portfolio_view" src="./screenshots/5.png"><img width="200" alt="portfolio_view" src="./screenshots/6.png">
