@@ -26,7 +26,7 @@ class MovieService{
             .replacingOccurrences(of: "[PAGE]", with: String(pageID))
         var request = URLRequest(url: URL(string: url)!)
         request.httpMethod = "GET"
-        let task = URLSession(configuration: .default).dataTask(with: request) { data, response, error in
+        URLSession(configuration: .default).dataTask(with: request) { data, response, error in
             if(data != nil){
                 do{
                     let result: PopularMovies = try JSONDecoder().decode(PopularMovies.self, from: data!)
@@ -45,8 +45,7 @@ class MovieService{
                 callback(false)
                 print(error?.localizedDescription ?? "no error description")
             }
-        }
-        task.resume()
+        }.resume()
     }
     
     static func getMovieDetails(movie:Movie,callback:@escaping((MovieDetails?) -> Void)){
@@ -55,7 +54,7 @@ class MovieService{
             .replacingOccurrences(of: "[ID]", with: String(movie.id))
         var request = URLRequest(url: URL(string: url)!)
         request.httpMethod = "GET"
-        let task = URLSession(configuration: .default).dataTask(with: request) { data, response, error in
+        URLSession(configuration: .default).dataTask(with: request) { data, response, error in
             if(data != nil){
                 do{
                     let result: MovieDetails = try JSONDecoder().decode(MovieDetails.self, from: data!)
@@ -68,7 +67,6 @@ class MovieService{
                 callback(nil)
                 print(error?.localizedDescription ?? "no error description")
             }
-        }
-        task.resume()
+        }.resume()
     }
 }

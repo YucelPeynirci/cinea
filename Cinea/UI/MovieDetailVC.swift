@@ -11,7 +11,7 @@ import Kingfisher
 class MovieDetailVC:UIViewController,UIScrollViewDelegate{
     var movie:Movie?
     @IBOutlet weak var darkground: UIView!
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var poster: UIImageView!
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -22,8 +22,8 @@ class MovieDetailVC:UIViewController,UIScrollViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        image.kf.setImage(with: URL(string: MovieService.PosterURL + "w200" +  movie!.poster_path!), placeholder: nil, options: nil, completionHandler: {result in
-            self.image.kf.setImage(with: URL(string: MovieService.PosterURL + "w300" + self.movie!.poster_path!),placeholder: self.image.image)
+        poster.kf.setImage(with: URL(string: MovieService.PosterURL + "w200" +  movie!.poster_path!), placeholder: nil, options: nil, completionHandler: {result in
+            self.poster.kf.setImage(with: URL(string: MovieService.PosterURL + "w300" + self.movie!.poster_path!),placeholder: self.poster.image)
         })
         labelTitle.text = movie?.title
         labelDescription.text = movie?.overview
@@ -65,7 +65,7 @@ class MovieDetailVC:UIViewController,UIScrollViewDelegate{
         imageTop.constant = -offset/2
         darkgroundTop.constant = imageTop.constant
         if(offset > 0){
-            image.alpha = 1-(offset/scrollView.frame.size.height)
+            poster.alpha = 1-(offset/scrollView.frame.size.height)
         }
     }
     

@@ -88,7 +88,7 @@
                                                                 <constraint firstAttribute="width" secondItem="HyA-yu-CbD" secondAttribute="height" multiplier="2:3" id="R93-zH-WXI"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8UG-7L-Zso">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8UG-7L-Zso">
                                                             <rect key="frame" x="6" y="403.5" width="257" height="86.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" name="TitleColor"/>
@@ -140,7 +140,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </collectionReusableView>
-                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="popularMoviesFooter" id="aQC-dD-S06">
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="popularMoviesFooter" id="aQC-dD-S06" customClass="PopularMoviesFooter" customModule="Cinea" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="545" width="414" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -154,6 +154,9 @@
                                         <constraint firstItem="T0t-TN-OBQ" firstAttribute="centerX" secondItem="aQC-dD-S06" secondAttribute="centerX" id="19J-aN-qLL"/>
                                         <constraint firstItem="T0t-TN-OBQ" firstAttribute="centerY" secondItem="aQC-dD-S06" secondAttribute="centerY" id="aFi-Qe-Wwh"/>
                                     </constraints>
+                                    <connections>
+                                        <outlet property="indicator" destination="T0t-TN-OBQ" id="bpN-9F-vne"/>
+                                    </connections>
                                 </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="erR-Qm-sRs" id="nRp-wX-jJi"/>
@@ -173,7 +176,7 @@
                                     <action selector="searchClick:" destination="erR-Qm-sRs" eventType="touchUpInside" id="Ubd-UV-LPf"/>
                                 </connections>
                             </button>
-                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v2U-2G-Fgb">
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="v2U-2G-Fgb">
                                 <rect key="frame" x="74" y="96" width="316" height="34"/>
                                 <color key="backgroundColor" name="TableItemBackgroundColor"/>
                                 <color key="textColor" name="TitleColor"/>
@@ -317,10 +320,10 @@
                         <outlet property="darkgroundTop" destination="SBj-oe-Ioz" id="XBM-7k-BTc"/>
                         <outlet property="descriptionBottom" destination="hg1-yZ-uM2" id="mdF-3r-rwq"/>
                         <outlet property="favBtn" destination="ENU-44-Qx8" id="WVI-Lr-zLB"/>
-                        <outlet property="image" destination="dTy-dP-YQ7" id="Noo-67-uF9"/>
                         <outlet property="imageTop" destination="L2s-ZV-3ij" id="d3V-P7-CXR"/>
                         <outlet property="labelDescription" destination="13Q-bG-deV" id="8cZ-b8-WpD"/>
                         <outlet property="labelTitle" destination="BUo-Cz-Akq" id="C2Y-x2-RYI"/>
+                        <outlet property="poster" destination="dTy-dP-YQ7" id="ZDJ-qn-SSE"/>
                         <outlet property="scrollView" destination="5AT-xm-06m" id="sPL-2S-Dh7"/>
                     </connections>
                 </viewController>

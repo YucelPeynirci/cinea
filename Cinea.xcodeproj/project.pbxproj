@@ -55,7 +55,7 @@
 		36CC969E25BDCD0A00CAF097 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		36CC96A625BDCE9F00CAF097 /* Prefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
 		36CC96BC25BDF81700CAF097 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
-		36CC96C125BE098000CAF097 /* Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourites.swift; sourceTree = "<group>"; };
+		36CC96C125BE098000CAF097 /* Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Favourites.swift; path = Cinea/storage/Favourites.swift; sourceTree = SOURCE_ROOT; };
 		36CF40E925BDBD72000D7176 /* Cinea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CF40EC25BDBD72000D7176 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36CF40EE25BDBD72000D7176 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				36CC969E25BDCD0A00CAF097 /* MovieService.swift */,
-				36CC96C125BE098000CAF097 /* Favourites.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -134,6 +133,14 @@
 				36CC96BC25BDF81700CAF097 /* UIExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		36CC96CC25BE2C2700CAF097 /* storage */ = {
+			isa = PBXGroup;
+			children = (
+				36CC96C125BE098000CAF097 /* Favourites.swift */,
+			);
+			path = storage;
 			sourceTree = "<group>";
 		};
 		36CF40E025BDBD72000D7176 = {
@@ -161,6 +168,7 @@
 		36CF40EB25BDBD72000D7176 /* Cinea */ = {
 			isa = PBXGroup;
 			children = (
+				36CC96CC25BE2C2700CAF097 /* storage */,
 				36CF412825BDBE58000D7176 /* model */,
 				36CC969D25BDCCEB00CAF097 /* service */,
 				36CC968725BDC77C00CAF097 /* UI */,
