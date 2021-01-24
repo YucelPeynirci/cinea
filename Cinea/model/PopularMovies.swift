@@ -6,8 +6,8 @@
 //
 
 struct PopularMovies: Codable {
-    let page: Int
-    let results: [Movie]
+    var page: Int
+    var results: [Movie]
     let total_pages, total_results: Int
 }
 

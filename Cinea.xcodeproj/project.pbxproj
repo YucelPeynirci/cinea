@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		36CC969925BDCC1200CAF097 /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CC969825BDCC1200CAF097 /* MovieDetails.swift */; };
 		36CC969F25BDCD0A00CAF097 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CC969E25BDCD0A00CAF097 /* MovieService.swift */; };
 		36CC96A725BDCE9F00CAF097 /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CC96A625BDCE9F00CAF097 /* Prefs.swift */; };
+		36CC96BD25BDF81700CAF097 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CC96BC25BDF81700CAF097 /* UIExtensions.swift */; };
 		36CF40ED25BDBD72000D7176 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CF40EC25BDBD72000D7176 /* AppDelegate.swift */; };
 		36CF40EF25BDBD72000D7176 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CF40EE25BDBD72000D7176 /* SceneDelegate.swift */; };
 		36CF40F125BDBD72000D7176 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CF40F025BDBD72000D7176 /* SplashVC.swift */; };
@@ -52,6 +53,7 @@
 		36CC969825BDCC1200CAF097 /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
 		36CC969E25BDCD0A00CAF097 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		36CC96A625BDCE9F00CAF097 /* Prefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
+		36CC96BC25BDF81700CAF097 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		36CF40E925BDBD72000D7176 /* Cinea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CF40EC25BDBD72000D7176 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36CF40EE25BDBD72000D7176 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		36CC96AB25BDCEE300CAF097 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				36CC96BC25BDF81700CAF097 /* UIExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				36CF40E525BDBD72000D7176 /* Sources */,
 				36CF40E625BDBD72000D7176 /* Frameworks */,
 				36CF40E725BDBD72000D7176 /* Resources */,
+				6304C626940845A31C820463 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -266,6 +270,7 @@
 				36CF410625BDBD73000D7176 /* Sources */,
 				36CF410725BDBD73000D7176 /* Frameworks */,
 				36CF410825BDBD73000D7176 /* Resources */,
+				9D44AD1DC61D50DDFF828FFC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -347,6 +352,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6304C626940845A31C820463 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cinea/Pods-Cinea-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cinea/Pods-Cinea-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cinea/Pods-Cinea-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D44AD1DC61D50DDFF828FFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cinea-CineaUITests/Pods-Cinea-CineaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cinea-CineaUITests/Pods-Cinea-CineaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cinea-CineaUITests/Pods-Cinea-CineaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C6091F2EC45D49BF5047C3B5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -423,6 +462,7 @@
 				36CC96A725BDCE9F00CAF097 /* Prefs.swift in Sources */,
 				36CC968225BDC75100CAF097 /* PopularMovies.swift in Sources */,
 				36CC969925BDCC1200CAF097 /* MovieDetails.swift in Sources */,
+				36CC96BD25BDF81700CAF097 /* UIExtensions.swift in Sources */,
 				36CC968C25BDC82300CAF097 /* MainVC.swift in Sources */,
 				36CF40F125BDBD72000D7176 /* SplashVC.swift in Sources */,
 				36CF40ED25BDBD72000D7176 /* AppDelegate.swift in Sources */,
