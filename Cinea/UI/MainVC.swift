@@ -14,8 +14,8 @@ class MainVC:UIViewController{
     
     var pendingPagination = false
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
     }
 }
@@ -52,7 +52,7 @@ extension MainVC : UICollectionViewDataSource{
             cell.addTapGestureRecognizer(action: {
                 let movieDetail = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MovieDetailVC") as! MovieDetailVC
                 movieDetail.movie = movie
-                self.navigationController?.present(movieDetail, animated: true, completion: nil)
+                self.navigationController?.pushViewController(movieDetail, animated: true)
             })
             return cell
         } else {

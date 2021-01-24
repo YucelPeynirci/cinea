@@ -16,8 +16,19 @@ class MovieDetailVC:UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        image.kf.setImage(with: URL(string: MovieService.PosterURL + "w200" +  movie!.poster_path!))
+        image.kf.setImage(with: URL(string: MovieService.PosterURL + "w200" +  movie!.poster_path!), placeholder: nil, options: nil, completionHandler: {result in
+            self.image.kf.setImage(with: URL(string: MovieService.PosterURL + "w300" + self.movie!.poster_path!),placeholder: self.image.image)
+        })
         labelTitle.text = movie?.title
         labelDescription.text = movie?.overview
+        MovieService.getMovieDetails(movie: movie!, callback: {result in
+            self.labelDescription.text = result?.overview
+        })
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
 }

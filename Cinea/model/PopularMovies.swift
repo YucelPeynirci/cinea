@@ -12,9 +12,9 @@ struct PopularMovies: Codable {
 }
 
 struct Movie: Codable {
+    let id: Int
     let adult: Bool
     let genre_ids: [Int]
-    let id: Int
     let original_language: String
     let original_title, overview: String
     let popularity: Double

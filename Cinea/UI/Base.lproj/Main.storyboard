@@ -176,7 +176,7 @@
                                     <constraint firstAttribute="width" secondItem="dTy-dP-YQ7" secondAttribute="height" multiplier="2:3" id="RxR-hR-jPS"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5AT-xm-06m">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AT-xm-06m">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jye-Eu-5Ja">
@@ -187,7 +187,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37H-lA-qWT">
-                                        <rect key="frame" x="0.0" y="621" width="414" height="99"/>
+                                        <rect key="frame" x="0.0" y="621" width="414" height="468.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUo-Cz-Akq">
                                                 <rect key="frame" x="12" y="12" width="390" height="24"/>
@@ -195,8 +195,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13Q-bG-deV">
-                                                <rect key="frame" x="12" y="48" width="390" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13Q-bG-deV">
+                                                <rect key="frame" x="12" y="48" width="390" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -205,7 +205,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="13Q-bG-deV" secondAttribute="trailing" constant="12" id="Pbc-KG-Ukr"/>
-                                            <constraint firstAttribute="bottom" secondItem="13Q-bG-deV" secondAttribute="bottom" constant="30" id="hg1-yZ-uM2"/>
+                                            <constraint firstAttribute="bottom" secondItem="13Q-bG-deV" secondAttribute="bottom" constant="400" id="hg1-yZ-uM2"/>
                                             <constraint firstItem="BUo-Cz-Akq" firstAttribute="top" secondItem="37H-lA-qWT" secondAttribute="top" constant="12" id="kEM-eR-kEs"/>
                                             <constraint firstItem="13Q-bG-deV" firstAttribute="top" secondItem="BUo-Cz-Akq" secondAttribute="bottom" constant="12" id="meM-pH-Eun"/>
                                             <constraint firstItem="13Q-bG-deV" firstAttribute="leading" secondItem="37H-lA-qWT" secondAttribute="leading" constant="12" id="oDT-qj-2Ps"/>

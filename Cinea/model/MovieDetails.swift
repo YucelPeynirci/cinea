@@ -14,8 +14,8 @@ struct MovieDetails: Codable {
     let original_language, original_title: String
     let popularity: Double
     let poster_path, overview, imdb_id, homepage, backdrop_path: String?
-    let production_companies: [ProductionCompany]
-    let production_countries: [ProductionCountry]
+    let production_companies: [ProductionCompany]?
+    let production_countries: [ProductionCountry]?
     let release_date: String
     let revenue: Int
     let spoken_languages: [SpokenLanguage]
@@ -41,13 +41,13 @@ struct Genre: Codable {
 struct ProductionCompany: Codable {
     let id: Int
     let logo_path: String?
-    let name, origin_country: String
+    let name, origin_country: String?
 }
 
 struct ProductionCountry: Codable {
-    let iso3166_1, name: String
+    let iso3166_1, name: String?
 }
 
 struct SpokenLanguage: Codable {
-    let english_name, iso639_1, name: String
+    let english_name, iso639_1, name: String?
 }
