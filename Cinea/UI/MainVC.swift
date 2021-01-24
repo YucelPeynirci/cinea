@@ -12,9 +12,8 @@ class MainVC:UIViewController{
     
     @IBOutlet weak var popularMoviesCollection: UICollectionView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    var pendingPagination = false
+    
 }
 
 extension MainVC : UICollectionViewDelegateFlowLayout{
@@ -30,11 +29,20 @@ extension MainVC : UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let movie = MovieService.popularMovies?.results[indexPath.row]
+        if(!pendingPagination && indexPath.row > MovieService.popularMovies!.results.count-10){
+            pendingPagination = true
+            MovieService.getPopularMovies(callback: {result in
+                DispatchQueue.main.async {
+                    self.pendingPagination = false
+                    self.popularMoviesCollection.reloadData()
+                }
+            })
+        }
+        let movie = MovieService.popularMovies!.results[indexPath.row]
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PopularMoviesCell", for: indexPath) as? PopularMoviesCell {
-            cell.title.text = movie?.title
-            if(movie?.poster_path != nil){
-                cell.image.kf.setImage(with: URL(string: MovieService.PosterURL + "w200" +  movie!.poster_path!))
+            cell.title.text = movie.title
+            if(movie.poster_path != nil){
+                cell.image.kf.setImage(with: URL(string: MovieService.PosterURL + "w200" +  movie.poster_path!))
             }
             return cell
         } else {

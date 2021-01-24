@@ -18,9 +18,10 @@ struct Movie: Codable {
     let original_language: String
     let original_title, overview: String
     let popularity: Double
-    let release_date, title: String
-    let poster_path,backdrop_path: String?
+    let title: String
+    let poster_path,backdrop_path,release_date: String?
     let video: Bool
     let vote_average: Double
     let vote_count: Int
+    var movie_details:MovieDetails?
 }
