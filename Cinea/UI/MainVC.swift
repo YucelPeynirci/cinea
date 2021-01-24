@@ -50,7 +50,7 @@ class MainVC:UIViewController{
     @IBAction func searchFieldChanged(_ sender: Any) {
         if(searchField.hasText){
             movies = MovieService.popularMovies!.results.filter{$0.title.lowercased().contains(searchField.text!.lowercased())}
-            popularMoviesCollection.setContentOffset(CGPoint(x:0,y:0), animated: true)
+            popularMoviesCollection.setContentOffset(CGPoint(x:0,y:-50), animated: true)
         }else{
             movies = MovieService.popularMovies!.results
         }
