@@ -49,6 +49,11 @@ extension MainVC : UICollectionViewDataSource{
             if(movie.poster_path != nil){
                 cell.image.kf.setImage(with: URL(string: MovieService.PosterURL + "w200" +  movie.poster_path!))
             }
+            cell.addTapGestureRecognizer(action: {
+                let movieDetail = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MovieDetailVC") as! MovieDetailVC
+                movieDetail.movie = movie
+                self.navigationController?.present(movieDetail, animated: true, completion: nil)
+            })
             return cell
         } else {
             return UICollectionViewCell()
