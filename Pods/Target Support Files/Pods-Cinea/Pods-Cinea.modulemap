@@ -1,0 +1,6 @@
+framework module Pods_Cinea {
+  umbrella header "Pods-Cinea-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10C979C7B1671D9D1D7B5ECC96340FE8 /* Pods-CineaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB9CEFA6981282478F8FA85616DC519 /* Pods-CineaTests-dummy.m */; };
+		1204384EB7D154B6367AC41E36708BA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		12C76F07669FF2A04085816A02ADBFBA /* Pods-Cinea-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD61DF3230FF1D491AE03B4044B064E6 /* Pods-Cinea-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		570544B21384E15D9BC210D99ADBFAE3 /* Pods-CineaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB70289D81F676FD3EB3CA00F3100A0 /* Pods-CineaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E47F376FA94FF51D793A9BEFD1AFF88 /* Pods-Cinea-CineaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02C27A586F6B727816084FA289E92B67 /* Pods-Cinea-CineaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABD3137F6CBCE985591480754474A9DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		ADE68EA72C2C414C5516C68661AC2F2F /* Pods-Cinea-CineaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89291592C40C1019ACC78B41947B085E /* Pods-Cinea-CineaUITests-dummy.m */; };
+		CAFD20BF0BF7E6BC6B5B34FCB578C8FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D0A606CFE14BA912A2326A0A82DCA783 /* Pods-Cinea-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2AC309DFC79DE0913C388339F90927 /* Pods-Cinea-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C9F5809FF4EE13ED983F91D947B0909 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5E1DDB7377C3483BC3A64C228700C62;
+			remoteInfo = "Pods-Cinea";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0121E4619C2711A3E5628B5026A98B91 /* Pods_CineaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CineaTests.framework; path = "Pods-CineaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02C27A586F6B727816084FA289E92B67 /* Pods-Cinea-CineaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cinea-CineaUITests-umbrella.h"; sourceTree = "<group>"; };
+		08BA147757CB69A67A4AD8C7DC30C35E /* Pods-Cinea-CineaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cinea-CineaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1D68C3F2A6CC44DFF4934642457C987F /* Pods-Cinea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cinea.debug.xcconfig"; sourceTree = "<group>"; };
+		208D32A535E66FBABB1FB349DC4AC831 /* Pods-CineaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CineaTests.release.xcconfig"; sourceTree = "<group>"; };
+		23E382C9176068001AE0570C5C7ADD87 /* Pods-Cinea-CineaUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cinea-CineaUITests-Info.plist"; sourceTree = "<group>"; };
+		2EA4CBAEBA79411B656119F7275D0153 /* Pods-CineaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CineaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		33D2CFD1D2F49EF949977AF488265B50 /* Pods-Cinea.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Cinea.modulemap"; sourceTree = "<group>"; };
+		3CB2888080BB47EE8EBF61D7C9284C6D /* Pods_Cinea.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Cinea.framework; path = "Pods-Cinea.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44270317ECCBBEE66B5511240422EC2F /* Pods-Cinea-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cinea-Info.plist"; sourceTree = "<group>"; };
+		4AE3635A051F56836F92A42A016E322B /* Pods-CineaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CineaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4E2AC309DFC79DE0913C388339F90927 /* Pods-Cinea-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cinea-dummy.m"; sourceTree = "<group>"; };
+		62EB32ED94B600B619209A086CF02F4E /* Pods-CineaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CineaTests.modulemap"; sourceTree = "<group>"; };
+		679C6EA9473392D00DC7072AA4C759F2 /* Pods-Cinea-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cinea-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6DB9CEFA6981282478F8FA85616DC519 /* Pods-CineaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CineaTests-dummy.m"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7BB16B51EFA684A8BBE1C79FFA9A6C11 /* Pods-CineaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CineaTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		89291592C40C1019ACC78B41947B085E /* Pods-Cinea-CineaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cinea-CineaUITests-dummy.m"; sourceTree = "<group>"; };
+		8F8B80F21B99A07065081C7D66E61534 /* Pods-Cinea-CineaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Cinea-CineaUITests.modulemap"; sourceTree = "<group>"; };
+		911FB7283D0A697427561706B627A5A2 /* Pods-CineaTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CineaTests-Info.plist"; sourceTree = "<group>"; };
+		94EC730810A52332711BF2639FBB2581 /* Pods_Cinea_CineaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Cinea_CineaUITests.framework; path = "Pods-Cinea-CineaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8C8B44CC1A535CACDA15C9AEC73B5D3 /* Pods-Cinea-CineaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cinea-CineaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BD61DF3230FF1D491AE03B4044B064E6 /* Pods-Cinea-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cinea-umbrella.h"; sourceTree = "<group>"; };
+		BD6F669EC754138DC0D18BCBF8B8C78D /* Pods-Cinea-CineaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cinea-CineaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D17075A75E91890FD30DF44E9E14964E /* Pods-Cinea-CineaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cinea-CineaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DAB70289D81F676FD3EB3CA00F3100A0 /* Pods-CineaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CineaTests-umbrella.h"; sourceTree = "<group>"; };
+		DC5B3472E8029BA15FFA71CCA7D9CDCB /* Pods-Cinea-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cinea-acknowledgements.plist"; sourceTree = "<group>"; };
+		F9CE4845071A6EF3CB0C39A18C109186 /* Pods-Cinea.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cinea.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9129FB2AFB3BF8A188513EF6A9A22D6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1204384EB7D154B6367AC41E36708BA4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A527735C9A42CD5CCDC47AC071F2B110 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFD20BF0BF7E6BC6B5B34FCB578C8FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0ED9ECC474199A771B5BAD5BEC2098D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD3137F6CBCE985591480754474A9DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4554AF8DEC9CE28900FEE2C83C92D4F1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F59BCBD46E0826E5A8C3D90E6B1074A /* Pods-Cinea */,
+				A5CCB62041B92F9E333610F34DB02ED2 /* Pods-Cinea-CineaUITests */,
+				BD251DA217BE91766823D1601DA96AE6 /* Pods-CineaTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9F59BCBD46E0826E5A8C3D90E6B1074A /* Pods-Cinea */ = {
+			isa = PBXGroup;
+			children = (
+				33D2CFD1D2F49EF949977AF488265B50 /* Pods-Cinea.modulemap */,
+				679C6EA9473392D00DC7072AA4C759F2 /* Pods-Cinea-acknowledgements.markdown */,
+				DC5B3472E8029BA15FFA71CCA7D9CDCB /* Pods-Cinea-acknowledgements.plist */,
+				4E2AC309DFC79DE0913C388339F90927 /* Pods-Cinea-dummy.m */,
+				44270317ECCBBEE66B5511240422EC2F /* Pods-Cinea-Info.plist */,
+				BD61DF3230FF1D491AE03B4044B064E6 /* Pods-Cinea-umbrella.h */,
+				1D68C3F2A6CC44DFF4934642457C987F /* Pods-Cinea.debug.xcconfig */,
+				F9CE4845071A6EF3CB0C39A18C109186 /* Pods-Cinea.release.xcconfig */,
+			);
+			name = "Pods-Cinea";
+			path = "Target Support Files/Pods-Cinea";
+			sourceTree = "<group>";
+		};
+		A5CCB62041B92F9E333610F34DB02ED2 /* Pods-Cinea-CineaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8F8B80F21B99A07065081C7D66E61534 /* Pods-Cinea-CineaUITests.modulemap */,
+				D17075A75E91890FD30DF44E9E14964E /* Pods-Cinea-CineaUITests-acknowledgements.markdown */,
+				A8C8B44CC1A535CACDA15C9AEC73B5D3 /* Pods-Cinea-CineaUITests-acknowledgements.plist */,
+				89291592C40C1019ACC78B41947B085E /* Pods-Cinea-CineaUITests-dummy.m */,
+				23E382C9176068001AE0570C5C7ADD87 /* Pods-Cinea-CineaUITests-Info.plist */,
+				02C27A586F6B727816084FA289E92B67 /* Pods-Cinea-CineaUITests-umbrella.h */,
+				BD6F669EC754138DC0D18BCBF8B8C78D /* Pods-Cinea-CineaUITests.debug.xcconfig */,
+				08BA147757CB69A67A4AD8C7DC30C35E /* Pods-Cinea-CineaUITests.release.xcconfig */,
+			);
+			name = "Pods-Cinea-CineaUITests";
+			path = "Target Support Files/Pods-Cinea-CineaUITests";
+			sourceTree = "<group>";
+		};
+		BD251DA217BE91766823D1601DA96AE6 /* Pods-CineaTests */ = {
+			isa = PBXGroup;
+			children = (
+				62EB32ED94B600B619209A086CF02F4E /* Pods-CineaTests.modulemap */,
+				4AE3635A051F56836F92A42A016E322B /* Pods-CineaTests-acknowledgements.markdown */,
+				7BB16B51EFA684A8BBE1C79FFA9A6C11 /* Pods-CineaTests-acknowledgements.plist */,
+				6DB9CEFA6981282478F8FA85616DC519 /* Pods-CineaTests-dummy.m */,
+				911FB7283D0A697427561706B627A5A2 /* Pods-CineaTests-Info.plist */,
+				DAB70289D81F676FD3EB3CA00F3100A0 /* Pods-CineaTests-umbrella.h */,
+				2EA4CBAEBA79411B656119F7275D0153 /* Pods-CineaTests.debug.xcconfig */,
+				208D32A535E66FBABB1FB349DC4AC831 /* Pods-CineaTests.release.xcconfig */,
+			);
+			name = "Pods-CineaTests";
+			path = "Target Support Files/Pods-CineaTests";
+			sourceTree = "<group>";
+		};
+		C9F30782817CB3C71F6E4BD5013FC604 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CB2888080BB47EE8EBF61D7C9284C6D /* Pods_Cinea.framework */,
+				94EC730810A52332711BF2639FBB2581 /* Pods_Cinea_CineaUITests.framework */,
+				0121E4619C2711A3E5628B5026A98B91 /* Pods_CineaTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				C9F30782817CB3C71F6E4BD5013FC604 /* Products */,
+				4554AF8DEC9CE28900FEE2C83C92D4F1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9CDF2FCA7E6D5B2B16428FD653004C8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				570544B21384E15D9BC210D99ADBFAE3 /* Pods-CineaTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B901406566E0FB7E3B4B85819DB7D727 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C76F07669FF2A04085816A02ADBFBA /* Pods-Cinea-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD80B05DE8841B17B265EC3B50B06EDD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E47F376FA94FF51D793A9BEFD1AFF88 /* Pods-Cinea-CineaUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D8072D701019E9043828253E375A233 /* Pods-Cinea-CineaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF8866A11ED5A06AED242C4A59E03133 /* Build configuration list for PBXNativeTarget "Pods-Cinea-CineaUITests" */;
+			buildPhases = (
+				DD80B05DE8841B17B265EC3B50B06EDD /* Headers */,
+				C79A64BDC7000A4EAD9364084B59DB61 /* Sources */,
+				9129FB2AFB3BF8A188513EF6A9A22D6A /* Frameworks */,
+				903E2E5029C7FB81BCAA99656641F3A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Cinea-CineaUITests";
+			productName = "Pods-Cinea-CineaUITests";
+			productReference = 94EC730810A52332711BF2639FBB2581 /* Pods_Cinea_CineaUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		996F14702EE43AB69F194CA939031060 /* Pods-CineaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB2DB9980F21DF2A609B8B44C008BAC /* Build configuration list for PBXNativeTarget "Pods-CineaTests" */;
+			buildPhases = (
+				9CDF2FCA7E6D5B2B16428FD653004C8C /* Headers */,
+				004BE72724BBE2B7D73F5A924CC78E74 /* Sources */,
+				B0ED9ECC474199A771B5BAD5BEC2098D /* Frameworks */,
+				4933FA7031B1171ECCB10B1EA27DF338 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E69AF408545CFA21E8034509DEB16D74 /* PBXTargetDependency */,
+			);
+			name = "Pods-CineaTests";
+			productName = "Pods-CineaTests";
+			productReference = 0121E4619C2711A3E5628B5026A98B91 /* Pods_CineaTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F5E1DDB7377C3483BC3A64C228700C62 /* Pods-Cinea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69BFF564371871CFE6DED4B733CF9834 /* Build configuration list for PBXNativeTarget "Pods-Cinea" */;
+			buildPhases = (
+				B901406566E0FB7E3B4B85819DB7D727 /* Headers */,
+				8CCAE7147B5E79EA6951E8BF75586AC6 /* Sources */,
+				A527735C9A42CD5CCDC47AC071F2B110 /* Frameworks */,
+				7093F19AA1CD5AD4BE3B8383E727C661 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Cinea";
+			productName = "Pods-Cinea";
+			productReference = 3CB2888080BB47EE8EBF61D7C9284C6D /* Pods_Cinea.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C9F30782817CB3C71F6E4BD5013FC604 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5E1DDB7377C3483BC3A64C228700C62 /* Pods-Cinea */,
+				8D8072D701019E9043828253E375A233 /* Pods-Cinea-CineaUITests */,
+				996F14702EE43AB69F194CA939031060 /* Pods-CineaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4933FA7031B1171ECCB10B1EA27DF338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7093F19AA1CD5AD4BE3B8383E727C661 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		903E2E5029C7FB81BCAA99656641F3A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		004BE72724BBE2B7D73F5A924CC78E74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C979C7B1671D9D1D7B5ECC96340FE8 /* Pods-CineaTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CCAE7147B5E79EA6951E8BF75586AC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A606CFE14BA912A2326A0A82DCA783 /* Pods-Cinea-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C79A64BDC7000A4EAD9364084B59DB61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE68EA72C2C414C5516C68661AC2F2F /* Pods-Cinea-CineaUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E69AF408545CFA21E8034509DEB16D74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Cinea";
+			target = F5E1DDB7377C3483BC3A64C228700C62 /* Pods-Cinea */;
+			targetProxy = 2C9F5809FF4EE13ED983F91D947B0909 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04DC74BE1D85460181443B7BE024E403 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08BA147757CB69A67A4AD8C7DC30C35E /* Pods-Cinea-CineaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Cinea-CineaUITests/Pods-Cinea-CineaUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Cinea-CineaUITests/Pods-Cinea-CineaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		125C51B0F88E28C868DC90BD45E4E727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		424FFFBAD3A0283C1E697FB6F89EE225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 208D32A535E66FBABB1FB349DC4AC831 /* Pods-CineaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CineaTests/Pods-CineaTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CineaTests/Pods-CineaTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		453D445757BE6CCAE66AB9F3D1E19DA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD6F669EC754138DC0D18BCBF8B8C78D /* Pods-Cinea-CineaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Cinea-CineaUITests/Pods-Cinea-CineaUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Cinea-CineaUITests/Pods-Cinea-CineaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A3934435D4E832404ABB8EEE690861F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9CE4845071A6EF3CB0C39A18C109186 /* Pods-Cinea.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Cinea/Pods-Cinea-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Cinea/Pods-Cinea.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		92A3E9AC052A7345115439021B218E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BE8DD31F6EA72702DCC7B07458433772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EA4CBAEBA79411B656119F7275D0153 /* Pods-CineaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CineaTests/Pods-CineaTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CineaTests/Pods-CineaTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C5D9660C61EB8511F7D4E2A889328790 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D68C3F2A6CC44DFF4934642457C987F /* Pods-Cinea.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Cinea/Pods-Cinea-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Cinea/Pods-Cinea.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125C51B0F88E28C868DC90BD45E4E727 /* Debug */,
+				92A3E9AC052A7345115439021B218E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69BFF564371871CFE6DED4B733CF9834 /* Build configuration list for PBXNativeTarget "Pods-Cinea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5D9660C61EB8511F7D4E2A889328790 /* Debug */,
+				8A3934435D4E832404ABB8EEE690861F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF8866A11ED5A06AED242C4A59E03133 /* Build configuration list for PBXNativeTarget "Pods-Cinea-CineaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				453D445757BE6CCAE66AB9F3D1E19DA6 /* Debug */,
+				04DC74BE1D85460181443B7BE024E403 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB2DB9980F21DF2A609B8B44C008BAC /* Build configuration list for PBXNativeTarget "Pods-CineaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE8DD31F6EA72702DCC7B07458433772 /* Debug */,
+				424FFFBAD3A0283C1E697FB6F89EE225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
