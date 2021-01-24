@@ -11,12 +11,31 @@ import Kingfisher
 class MainVC:UIViewController{
     
     @IBOutlet weak var popularMoviesCollection: UICollectionView!
+    @IBOutlet weak var searchField: UITextField!
     
     var pendingPagination = false
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
+        
+    }
+    
+    @IBAction func searchClick(_ sender: Any) {
+        searchField.isHidden.toggle()
+        if(!searchField.isHidden){
+            searchField.becomeFirstResponder()
+        }else{
+            searchField.resignFirstResponder()
+        }
+    }
+    
+    @IBAction func searchFieldDoneAction(_ sender: Any) {
+        searchField.resignFirstResponder()
+    }
+    
+    @IBAction func searchFieldChanged(_ sender: Any) {
+        
     }
 }
 
@@ -64,6 +83,9 @@ extension MainVC : UICollectionViewDataSource{
         if (kind == UICollectionView.elementKindSectionFooter) {
             let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "popularMoviesFooter", for: indexPath)
             return footerView
+        }else if(kind == UICollectionView.elementKindSectionHeader){
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "popularMoviesHeader", for: indexPath)
+            return headerView
         }
         return UICollectionReusableView()
     }
