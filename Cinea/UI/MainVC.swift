@@ -23,7 +23,7 @@ class MainVC:UIViewController{
 extension MainVC : UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.size.width
-        return CGSize(width: (width-10)/2, height: width*7/8)
+        return CGSize(width: (width-24)/2, height: width*7/8)
     }
 }
 
