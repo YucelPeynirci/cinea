@@ -59,12 +59,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Oh-HZ-Bvv">
-                                <rect key="frame" x="5" y="88" width="404" height="808"/>
+                                <rect key="frame" x="5" y="0.0" width="404" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KqL-WC-oLU">
                                     <size key="itemSize" width="269" height="495"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="50" height="50"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
@@ -122,6 +122,21 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="popularMoviesFooter" id="aQC-dD-S06">
+                                    <rect key="frame" x="0.0" y="495" width="404" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="T0t-TN-OBQ">
+                                            <rect key="frame" x="192" y="15" width="20" height="20"/>
+                                            <color key="color" systemColor="linkColor"/>
+                                        </activityIndicatorView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="T0t-TN-OBQ" firstAttribute="centerX" secondItem="aQC-dD-S06" secondAttribute="centerX" id="19J-aN-qLL"/>
+                                        <constraint firstItem="T0t-TN-OBQ" firstAttribute="centerY" secondItem="aQC-dD-S06" secondAttribute="centerY" id="aFi-Qe-Wwh"/>
+                                    </constraints>
+                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="erR-Qm-sRs" id="nRp-wX-jJi"/>
                                     <outlet property="delegate" destination="erR-Qm-sRs" id="BdE-cH-q2l"/>
@@ -134,7 +149,7 @@
                             <constraint firstItem="8Oh-HZ-Bvv" firstAttribute="leading" secondItem="aKS-eB-aM4" secondAttribute="leading" constant="5" id="GjW-om-piS"/>
                             <constraint firstItem="aKS-eB-aM4" firstAttribute="trailing" secondItem="8Oh-HZ-Bvv" secondAttribute="trailing" constant="5" id="Jgg-cc-O9O"/>
                             <constraint firstAttribute="bottom" secondItem="8Oh-HZ-Bvv" secondAttribute="bottom" id="biG-J3-gW2"/>
-                            <constraint firstItem="8Oh-HZ-Bvv" firstAttribute="top" secondItem="aKS-eB-aM4" secondAttribute="top" id="lLR-Me-4Ym"/>
+                            <constraint firstItem="8Oh-HZ-Bvv" firstAttribute="top" secondItem="WXL-Is-fXF" secondAttribute="top" id="y1o-Hn-jc1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="k09-12-9R3"/>
@@ -169,6 +184,9 @@
         <namedColor name="TitleColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -14,6 +14,10 @@ class MainVC:UIViewController{
     
     var pendingPagination = false
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden = true
+    }
 }
 
 extension MainVC : UICollectionViewDelegateFlowLayout{
@@ -32,10 +36,11 @@ extension MainVC : UICollectionViewDataSource{
         if(!pendingPagination && indexPath.row > MovieService.popularMovies!.results.count-10){
             pendingPagination = true
             MovieService.getPopularMovies(callback: {result in
-                DispatchQueue.main.async {
+                self.pendingPagination = false
+                DispatchQueue.main.asyncAfter(deadline: .now() + (result ? 0 : 1), execute: {
                     self.pendingPagination = false
                     self.popularMoviesCollection.reloadData()
-                }
+                })
             })
         }
         let movie = MovieService.popularMovies!.results[indexPath.row]
@@ -48,6 +53,14 @@ extension MainVC : UICollectionViewDataSource{
         } else {
             return UICollectionViewCell()
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if (kind == UICollectionView.elementKindSectionFooter) {
+            let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "popularMoviesFooter", for: indexPath)
+            return footerView
+        }
+        return UICollectionReusableView()
     }
 }
 
