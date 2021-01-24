@@ -18,7 +18,7 @@ class MainVC:UIViewController{
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
-        
+        popularMoviesCollection.reloadData()
     }
     
     @IBAction func searchClick(_ sender: Any) {
@@ -73,6 +73,7 @@ extension MainVC : UICollectionViewDataSource{
                 movieDetail.movie = movie
                 self.navigationController?.pushViewController(movieDetail, animated: true)
             })
+            cell.favIcon.isHidden = !Favourites.isFav(id: movie.id)
             return cell
         } else {
             return UICollectionViewCell()
@@ -94,4 +95,5 @@ extension MainVC : UICollectionViewDataSource{
 class PopularMoviesCell:UICollectionViewCell{
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var favIcon: UIImageView!
 }

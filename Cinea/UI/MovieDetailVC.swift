@@ -18,6 +18,7 @@ class MovieDetailVC:UIViewController,UIScrollViewDelegate{
     @IBOutlet weak var imageTop: NSLayoutConstraint!
     @IBOutlet weak var descriptionBottom: NSLayoutConstraint!
     @IBOutlet weak var darkgroundTop: NSLayoutConstraint!
+    @IBOutlet weak var favBtn: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,18 +33,31 @@ class MovieDetailVC:UIViewController,UIScrollViewDelegate{
             }
         })
         scrollView.delegate = self
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationItem.title = movie?.title
         self.navigationController?.isNavigationBarHidden = false
+        updateFav()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.descriptionBottom.constant = scrollView.frame.size.height/3
+    }
+    
+    @IBAction func favClick(_ sender: Any) {
+        Favourites.toggleFav(id: movie!.id)
+        updateFav()
+    }
+    
+    func updateFav(){
+        if(Favourites.isFav(id: movie!.id)){
+            favBtn.image = #imageLiteral(resourceName: "starFilled")
+        }else{
+            favBtn.image = #imageLiteral(resourceName: "starEmpty")
+        }
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
