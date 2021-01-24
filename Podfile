@@ -6,6 +6,7 @@ target 'Cinea' do
   use_frameworks!
 
   # Pods for Cinea
+  pod 'Kingfisher'
 
   target 'CineaTests' do
     inherit! :search_paths
