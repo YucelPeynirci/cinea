@@ -1,4 +1,4 @@
-# cinea
+# Cinea
 Sample iOS App on top of TheMovieDB Api
 
 Run "pod install" on command line to run the app.
