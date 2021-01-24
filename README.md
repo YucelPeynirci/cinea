@@ -2,7 +2,7 @@
 Sample iOS App on top of TheMovieDB Api
 
 Run "pod install" on command line to run the app.
-Only pod used is KingFisher
+Only pod used is KingFisher, only for caching purpose to help with infinitive scroll.
 
 Features;
 - UICollectionView with pagination to list movies
